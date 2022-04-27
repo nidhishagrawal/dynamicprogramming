@@ -1,0 +1,3 @@
+
+LCP(a)  = LCS(a, reverse(a));
+
