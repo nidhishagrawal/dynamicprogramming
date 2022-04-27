@@ -37,8 +37,8 @@ int solve(int e , int f) {
              high = solve(e-1,f-k);
              t[e-1][f-k] = high;
              }
-             
-           int temp  = 1+Math.max(solve(e-1,k-1),solve(e,f-k));
+              int temp  = 1+Math.max(low,high);
+         //  int temp  = 1+Math.max(solve(e-1,k-1),solve(e,f-k));
             min = Math.min(temp, min);
             }
             t[e][f] = min;
